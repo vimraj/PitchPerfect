@@ -10,9 +10,12 @@ import UIKit
 
 class PlaySoundsViewController: UIViewController {
 
+    var recordedAudioURL: NSURL!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Play sounds view did load")
+        print(recordedAudioURL!)
         // Do any additional setup after loading the view.
     }
 
@@ -22,19 +25,9 @@ class PlaySoundsViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        if (segue.identifier == "stopRecordSegue") {
-            let playSoundsVC = segue.destinationViewController as! PlaySoundsViewController
-            let recordedAudioURL = sender as! NSURL
-            playSoundsVC.recordedAudioURL = recordedAudioURL
-        }
-    }
-    */
+        
 
 }
