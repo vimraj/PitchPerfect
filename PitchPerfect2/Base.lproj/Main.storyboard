@@ -29,7 +29,6 @@
                                 <state key="normal" image="stopButton"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xt-pa-gzi"/>
-                                    <segue destination="xr4-YO-w3N" kind="show" id="e5i-ih-fBZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOO-8o-2v6">
@@ -54,16 +53,17 @@
                         <outlet property="recordButton" destination="i31-aH-NjD" id="H3N-FP-CvN"/>
                         <outlet property="recordingLabel" destination="lOO-8o-2v6" id="ZAV-bg-Dui"/>
                         <outlet property="stopButton" destination="EZJ-Aj-Eeq" id="6b1-N1-WPD"/>
+                        <segue destination="xr4-YO-w3N" kind="show" identifier="stopRecordSegue" id="8th-hS-hmA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="983" y="355"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="V6B-9R-MNj">
             <objects>
-                <viewController id="xr4-YO-w3N" sceneMemberID="viewController">
+                <viewController id="xr4-YO-w3N" customClass="PlaySoundsViewController" customModule="PitchPerfect2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o2W-C9-na4"/>
                         <viewControllerLayoutGuide type="bottom" id="mpr-ZE-40j"/>
